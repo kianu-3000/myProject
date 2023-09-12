@@ -1,4 +1,5 @@
 import { useState } from "react";
+import album from "../../assets/album.svg";
 
 const Home = () => {
 
@@ -11,10 +12,18 @@ const Home = () => {
                         <span>Username</span>
                     </div>
 
-                    <div>
+                    <div className="create_post__post">
                         <form action="">
                            <textarea name="createPost" id="post" placeholder="Create Post. . ."></textarea>
                         </form>
+
+                        <div>
+                            <label htmlFor="file_upload" className="post__file_upload_label">
+                                <img src={album} alt="" className="upload_label__logo"/>
+                            </label>
+                            <input type="file" className="post__file" id="file_upload"/>
+                            <button type="submit">Create Post</button>
+                        </div>
                     </div>
                 </div>
             </section>

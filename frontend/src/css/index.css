@@ -110,7 +110,7 @@ a {
   font-size: var(--medium);
   font-weight: bold;
 }
-.container .main_home .main_home__left_bar .left_bar__create_post div textarea {
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post textarea {
   resize: none;
   width: 100%;
   padding: var(--small);
@@ -122,12 +122,40 @@ a {
   font-weight: normal;
   color: var(--black);
 }
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post div {
+  margin-top: var(--small);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post div .post__file {
+  display: none;
+}
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post div .post__file_upload_label {
+  margin-right: var(--normal);
+}
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post div .post__file_upload_label .upload_label__logo {
+  width: var(--large);
+  height: var(--large);
+  cursor: pointer;
+  filter: var(--f-purple);
+}
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post div button {
+  border: none;
+  background-color: var(--purple);
+  color: var(--white);
+  padding: var(--small);
+  border-radius: var(--small);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.container .main_home .main_home__left_bar .left_bar__create_post .create_post__post div button:hover {
+  transform: scale(1.2);
+}
 .container .main_home .main_home__news_feed {
-  background-color: red;
   flex-grow: 1;
 }
 .container .main_home .main_home__right_bar {
-  background-color: yellow;
   flex-grow: 0.5;
 }
 
