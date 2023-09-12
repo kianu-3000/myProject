@@ -3,7 +3,7 @@
     flex-direction: row;
 
     .main_home__left_bar{
-        flex-grow: 0.1;
+        flex-grow: 0;
         display: flex;
         flex-direction: column;
         .left_bar__create_post{
@@ -93,6 +93,9 @@
             .see_online__friends{
                 padding: var(--normal);
                 .friends__info{
+                    border: 1px solid var(--purple);
+                    padding: var(--small);
+                    border-radius: var(--small);
                     font-weight: bold;
                 }
             }
