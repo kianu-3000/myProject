@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap');
+:root{
+
+    // Colors
+    --white: #FFFAFF;
+    --black: #303036;
+    --red: #D33F49;
+    --purple: #9381FF;
+    --blue: #6B9AC4;
+
+    //filters
+    --f-red: invert(31%) sepia(29%) saturate(2985%) hue-rotate(320deg) brightness(98%) contrast(104%);
+    --f-black: invert(16%) sepia(14%) saturate(350%) hue-rotate(201deg) brightness(92%) contrast(90%);
+    --f-white: invert(100%) sepia(62%) saturate(833%) hue-rotate(238deg) brightness(104%) contrast(111%);
+    --f-purple: invert(66%) sepia(35%) saturate(6420%) hue-rotate(215deg) brightness(99%) contrast(105%);
+    --f-blue: invert(61%) sepia(11%) saturate(1415%) hue-rotate(167deg) brightness(94%) contrast(87%);
+
+    // misc
+    --shadow: #9481ff31;
+
+    // font sizes
+    --small: 0.75rem;
+    --normal: 1rem;
+    --medium: 1.625rem;
+    --large: 2.125rem;
+    --x-large: 2.625;
+}

@@ -1,0 +1,78 @@
+Title: Blog Posting app
+
+Overview:
+    Create, update, delete posts.
+    Create, update, delete user profiles.
+    Comment on a post.
+    Add/Remove friends.
+
+User<Model>:
+    - id (PK)
+    - username (UK)
+    - password
+    - email (UK)
+    - first_name
+    - last_name
+    - middle_name
+    - age
+    - birth_date
+    - address
+    - number_of_posts
+    - cover_picture
+    - profile_picture
+
+Friends_Relationship<Model>: 
+    ex. (1,1,2) => This means that User.id(1) befriends User.id(2) with an id of 1
+    - id (PK)
+    - user_id (FK references the User.id of the one who initiates adding a friend)
+    - friend_id (FK references the User.id of the requested friend)
+
+Posts<Model>(User):
+    - id (PK)
+    - user_id (FK references User.id, one to many)
+    - title
+    - content
+    - image (nullable)
+    - date_created/updated
+    - likes
+    - dislikes
+    - visibility (only friends or anyone)
+    - status (deleted/hidden, updated)
+
+
+Web Application Design:
+
+    Color Palette:
+        (Cool tone)
+        --text: #000000;
+        --background: #ecf0f3;
+        --primary: #526d84;
+        --secondary: #d0d9e2;
+        --accent: #58758d;
+
+        (Warm Tone)
+        --text: #1e0c00;
+        --background: #ffefe6;
+        --primary: #fd690d;
+        --secondary: #fdd8c2;
+        --accent: #f25e02;
+
+        (PRO)
+        --text: #0a0d0f;
+        --background: #e3e9ed;
+        --primary: #30334a;
+        --secondary: #d4cedf;
+        --accent: #6b5988;
+
+    Application Route Pages:
+        - Login Page:
+            - Just a normal login page
+            - Has a registration link to create new accounts
+        - Home Page:
+            - Contains news feed and notifications 
+            - This is also where the user can post stuff
+        - Profile Page:
+            - Contains User account information
+        - Friends Page:
+            - Contains lists of whoever your friends are
+            - Be able to remove friends
